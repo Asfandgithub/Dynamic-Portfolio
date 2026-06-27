@@ -334,37 +334,65 @@ section{
    CONTACT
 =========================== */
 
+/* ===========================
+   CONTACT
+=========================== */
+
 .contact-container{
     display:flex;
-    gap:30px;
+    gap:40px;
+    align-items:flex-start;
+    flex-wrap:wrap;
 }
 
-.contact-container form{
-    width:55%;
+#contactForm{
+    flex:2;
     display:flex;
     flex-direction:column;
-}
-
-.contact-container input,
-.contact-container textarea{
-    padding:15px;
-    margin-bottom:15px;
-    border:1px solid #ddd;
-    border-radius:8px;
-}
-
-.contact-info{
-    width:40%;
     background:white;
-    padding:25px;
+    padding:30px;
     border-radius:15px;
     box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
-.contact-info p{
-    margin:15px 0;
+#contactForm input,
+#contactForm textarea{
+    padding:16px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    transition:0.3s;
 }
 
+#contactForm input:focus,
+#contactForm textarea:focus{
+    border-color:#2563EB;
+}
+
+.contact-info{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact-info h3{
+    color:#1E3A8A;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin:20px 0;
+    font-size:17px;
+}
+
+.contact-info a{
+    text-decoration:none;
+    color:#2563EB;
+}
 /* ===========================
    FOOTER
 =========================== */
