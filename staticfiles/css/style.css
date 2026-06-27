@@ -14,7 +14,7 @@ html{
 
 body{
     font-family:Arial, sans-serif;
-    background-color:white;
+    background:#fff;
     color:#222;
     transition:0.3s;
 }
@@ -27,15 +27,12 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-
     padding:20px 60px;
-
-    background-color:white;
-
-    box-shadow:0px 2px 10px lightgray;
-
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
     position:sticky;
     top:0;
+    z-index:1000;
 }
 
 .logo{
@@ -55,8 +52,8 @@ body{
 
 .nav-links a{
     text-decoration:none;
-    color:black;
-    font-weight:bold;
+    color:#222;
+    font-weight:600;
 }
 
 .nav-links a:hover{
@@ -64,21 +61,20 @@ body{
 }
 
 #themeBtn{
-    background:none;
     border:none;
+    background:none;
     font-size:20px;
     cursor:pointer;
 }
 
 /* ===========================
-   HERO SECTION
+   HERO
 =========================== */
 
 .hero{
     display:flex;
     justify-content:space-between;
     align-items:center;
-
     padding:80px;
 }
 
@@ -93,19 +89,16 @@ body{
 .hero-content h1{
     font-size:55px;
     color:#1E3A8A;
-
     margin-top:10px;
 }
 
 .hero-content h2{
-    margin-top:20px;
+    margin-top:15px;
 }
 
 .hero-content p{
     margin-top:20px;
-
     line-height:1.8;
-
     text-align:justify;
 }
 
@@ -115,29 +108,22 @@ body{
 
 .hero-image{
     width:40%;
-
     display:flex;
     justify-content:center;
 }
 
 .profile-card{
     background:white;
-
     padding:15px;
-
-    border-radius:10px;
-
-    box-shadow:0px 2px 15px lightgray;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
 .profile-card img{
     width:300px;
     height:380px;
-
     object-fit:cover;
-
     border-radius:10px;
-
     border:4px solid #1E3A8A;
 }
 
@@ -147,17 +133,11 @@ body{
 
 .btn{
     background:#1E3A8A;
-
     color:white;
-
     border:none;
-
     padding:12px 25px;
-
     border-radius:5px;
-
     cursor:pointer;
-
     margin-right:10px;
 }
 
@@ -167,15 +147,10 @@ body{
 
 .btn2{
     background:white;
-
     color:#1E3A8A;
-
     border:2px solid #1E3A8A;
-
     padding:12px 25px;
-
     border-radius:5px;
-
     cursor:pointer;
 }
 
@@ -185,7 +160,7 @@ body{
 }
 
 /* ===========================
-   SECTIONS
+   SECTION
 =========================== */
 
 section{
@@ -194,12 +169,9 @@ section{
 
 .section-title{
     text-align:center;
-
     color:#1E3A8A;
-
-    font-size:35px;
-
-    margin-bottom:40px;
+    font-size:40px;
+    margin-bottom:50px;
 }
 
 /* ===========================
@@ -207,14 +179,10 @@ section{
 =========================== */
 
 .about-container{
-    background:#F8F8F8;
-
+    background:#f8f9fa;
     padding:30px;
-
-    border-radius:10px;
-
-    box-shadow:0px 2px 10px lightgray;
-
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
     line-height:1.8;
 }
 
@@ -224,24 +192,17 @@ section{
 
 .education-container{
     display:flex;
-    justify-content:space-around;
-
     flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
 }
 
 .card{
     width:300px;
-
     background:white;
-
     padding:25px;
-
-    margin:15px;
-
-    border-radius:10px;
-
-    box-shadow:0px 2px 10px lightgray;
-
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
     text-align:center;
 }
 
@@ -254,16 +215,7 @@ section{
 =========================== */
 
 .skills-section{
-    padding:80px 0;
     background:#f8f9fa;
-}
-
-.section-title{
-    text-align:center;
-    font-size:42px;
-    font-weight:700;
-    color:#0b2c6b;
-    margin-bottom:60px;
 }
 
 .skills-container{
@@ -272,7 +224,7 @@ section{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:35px;
+    gap:30px;
 }
 
 .skill-card{
@@ -289,31 +241,29 @@ section{
 }
 
 .skill-card h3{
-    color:#0b2c6b;
+    color:#1E3A8A;
     margin-bottom:20px;
-    font-size:30px;
-    font-weight:700;
+    font-size:26px;
 }
 
 .skill-card ul{
     list-style:none;
-    padding:0;
 }
 
 .skill-card li{
-    margin:12px 0;
-    font-size:22px;
+    padding:8px 0;
+    font-size:18px;
 }
+
 /* ===========================
    LANGUAGES
 =========================== */
 
 .language-container{
     display:flex;
-
     justify-content:center;
-
     gap:30px;
+    flex-wrap:wrap;
 }
 
 /* ===========================
@@ -322,22 +272,14 @@ section{
 
 .experience-card{
     background:white;
-
     padding:30px;
-
-    border-radius:10px;
-
-    box-shadow:0px 2px 10px lightgray;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom:30px;
 }
 
 .experience-card h3{
     color:#1E3A8A;
-}
-
-.experience-card ul{
-    margin-top:20px;
-
-    margin-left:20px;
 }
 
 /* ===========================
@@ -346,29 +288,21 @@ section{
 
 .projects-container{
     display:flex;
-
     justify-content:center;
-
     flex-wrap:wrap;
+    gap:30px;
 }
 
 .project-card{
     width:320px;
-
     background:white;
-
     padding:25px;
-
-    margin:15px;
-
-    border-radius:10px;
-
-    box-shadow:0px 2px 10px lightgray;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
 .project-card h3{
     color:#1E3A8A;
-
     margin-bottom:15px;
 }
 
@@ -378,29 +312,21 @@ section{
 
 .testimonial-container{
     display:flex;
-
-    justify-content:center;
-
     flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
 }
 
 .testimonial{
     width:400px;
-
     background:white;
-
     padding:25px;
-
-    margin:15px;
-
-    border-radius:10px;
-
-    box-shadow:0px 2px 10px lightgray;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
 .testimonial h4{
     margin-top:15px;
-
     color:#1E3A8A;
 }
 
@@ -410,45 +336,33 @@ section{
 
 .contact-container{
     display:flex;
-
-    justify-content:space-between;
-
     gap:30px;
 }
 
-#contactForm{
-    width:50%;
-
+.contact-container form{
+    width:55%;
     display:flex;
-
     flex-direction:column;
 }
 
-#contactForm input,
-#contactForm textarea{
+.contact-container input,
+.contact-container textarea{
     padding:15px;
-
     margin-bottom:15px;
-
-    border:1px solid gray;
-
-    border-radius:5px;
+    border:1px solid #ddd;
+    border-radius:8px;
 }
 
 .contact-info{
     width:40%;
-
     background:white;
-
     padding:25px;
-
-    border-radius:10px;
-
-    box-shadow:0px 2px 10px lightgray;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
 .contact-info p{
-    margin:20px 0;
+    margin:15px 0;
 }
 
 /* ===========================
@@ -457,11 +371,8 @@ section{
 
 footer{
     background:#1E3A8A;
-
     color:white;
-
     text-align:center;
-
     padding:40px;
 }
 
@@ -471,9 +382,7 @@ footer{
 
 .footer-social a{
     color:white;
-
     text-decoration:none;
-
     margin:0 15px;
 }
 
@@ -481,25 +390,25 @@ footer{
    DARK MODE
 =========================== */
 
-.dark{
+body.dark{
     background:#111827;
     color:white;
 }
 
-.dark .navbar,
-.dark .profile-card,
-.dark .card,
-.dark .skill-card,
-.dark .project-card,
-.dark .testimonial,
-.dark .experience-card,
-.dark .contact-info,
-.dark .about-container{
+body.dark .navbar,
+body.dark .profile-card,
+body.dark .card,
+body.dark .skill-card,
+body.dark .project-card,
+body.dark .testimonial,
+body.dark .experience-card,
+body.dark .contact-info,
+body.dark .about-container{
     background:#1F2937;
     color:white;
 }
 
-.dark .nav-links a{
+body.dark .nav-links a{
     color:white;
 }
 
@@ -509,14 +418,21 @@ footer{
 
 @media(max-width:900px){
 
+    .navbar{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        margin-top:20px;
+    }
+
     .hero{
         flex-direction:column-reverse;
+        padding:40px;
     }
 
-    .hero-content{
-        width:100%;
-    }
-
+    .hero-content,
     .hero-image{
         width:100%;
     }
@@ -525,17 +441,8 @@ footer{
         flex-direction:column;
     }
 
-    #contactForm,
+    .contact-container form,
     .contact-info{
         width:100%;
-    }
-
-    .navbar{
-        flex-direction:column;
-    }
-
-    .nav-links{
-        margin-top:20px;
-        flex-wrap:wrap;
     }
 }
