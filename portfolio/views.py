@@ -15,13 +15,3 @@ def home(request):
 
     return render(request, 'index.html', context)
 
-from .models import Skill
-
-def home(request):
-    skills = Skill.objects.all().order_by('category')
-
-    context = {
-        'skills': skills,
-    }
-
-    return render(request, 'index.html', context)
