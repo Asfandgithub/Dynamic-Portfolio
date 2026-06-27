@@ -253,38 +253,57 @@ section{
    SKILLS
 =========================== */
 
+.skills-section{
+    padding:80px 0;
+    background:#f8f9fa;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    font-weight:700;
+    color:#0b2c6b;
+    margin-bottom:60px;
+}
+
 .skills-container{
+    width:90%;
+    margin:auto;
     display:flex;
-
-    justify-content:center;
-
     flex-wrap:wrap;
+    justify-content:center;
+    gap:35px;
 }
 
 .skill-card{
-    width:250px;
-
+    width:270px;
     background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
 
-    padding:25px;
-
-    margin:15px;
-
-    border-radius:10px;
-
-    box-shadow:0px 2px 10px lightgray;
+.skill-card:hover{
+    transform:translateY(-10px);
 }
 
 .skill-card h3{
-    color:#1E3A8A;
-
-    margin-bottom:15px;
+    color:#0b2c6b;
+    margin-bottom:20px;
+    font-size:30px;
+    font-weight:700;
 }
 
-.skill-card p{
-    margin:10px 0;
+.skill-card ul{
+    list-style:none;
+    padding:0;
 }
 
+.skill-card li{
+    margin:12px 0;
+    font-size:22px;
+}
 /* ===========================
    LANGUAGES
 =========================== */
