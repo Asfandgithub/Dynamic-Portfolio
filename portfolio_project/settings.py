@@ -22,7 +22,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-snmr+)9(haiy$kv*^t9-9x43qabugoflwqbvej@8q*0o5%unx!'
+SECRET_KEY = os.environ.get(
+    'SECRET_KEY',
+    'django-insecure-snmr+)9(haiy$kv*^t9-9x43qabugoflwqbvej@8q*0o5%unx!'
+)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -77,17 +80,16 @@ WSGI_APPLICATION = 'portfolio_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-import os
-import dj_database_url
 
+
+# Database
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('postgresql://postgres:AsfandPortfolio@2026@db.xurszihnqstbaygrjlmu.supabase.co:5432/postgres'),
+        default=os.environ.get('DATABASE_URL'),
         conn_max_age=600,
         ssl_require=True
     )
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
