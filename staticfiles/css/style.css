@@ -338,60 +338,100 @@ section{
    CONTACT
 =========================== */
 
+/* ===========================
+   CONTACT
+=========================== */
+
 .contact-container{
     display:flex;
-    gap:40px;
-    align-items:flex-start;
-    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:60px;
+    margin-top:50px;
 }
 
 #contactForm{
     flex:2;
     display:flex;
     flex-direction:column;
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
 #contactForm input,
 #contactForm textarea{
-    padding:16px;
+    padding:18px;
     margin-bottom:20px;
-    border:1px solid #ddd;
-    border-radius:10px;
-    font-size:16px;
-    outline:none;
-    transition:0.3s;
+    border:1px solid #999;
+    border-radius:8px;
+    font-size:18px;
+    background:white;
+}
+
+#contactForm textarea{
+    resize:none;
+    height:170px;
 }
 
 #contactForm input:focus,
 #contactForm textarea:focus{
-    border-color:#2563EB;
+    outline:none;
+    border:2px solid #1E3A8A;
+}
+
+#contactForm .btn{
+    width:100%;
+    padding:18px;
+    font-size:20px;
 }
 
 .contact-info{
     flex:1;
     background:white;
-    padding:30px;
+    padding:35px;
     border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    box-shadow:0px 5px 20px rgba(0,0,0,0.1);
 }
 
 .contact-info h3{
     color:#1E3A8A;
-    margin-bottom:20px;
+    font-size:38px;
+    margin-bottom:30px;
 }
 
 .contact-info p{
-    margin:20px 0;
-    font-size:17px;
+    margin:28px 0;
+    font-size:24px;
+}
+
+.contact-info i{
+    margin-right:12px;
+    color:#1E3A8A;
 }
 
 .contact-info a{
     text-decoration:none;
     color:#2563EB;
+}
+
+.work-status{
+    margin-top:30px;
+    background:#16a34a;
+    color:white;
+    padding:12px;
+    border-radius:8px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .contact-container{
+        flex-direction:column;
+    }
+
+    .contact-info{
+        width:100%;
+    }
 }
 /* ===========================
    FOOTER

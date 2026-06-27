@@ -5,6 +5,7 @@ def home(request):
 
     context = {
         'profile': Profile.objects.first(),
+        'contact': Contact.objects.first(),
         'education': Education.objects.all(),
         'skills': Skill.objects.all(),
         'languages': Language.objects.all(),
@@ -14,4 +15,3 @@ def home(request):
     }
 
     return render(request, 'index.html', context)
-

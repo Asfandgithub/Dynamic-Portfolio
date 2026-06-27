@@ -1,15 +1,29 @@
 from django.db import models
 
 
+# ==========================
+# PROFILE
+# ==========================
+
 class Profile(models.Model):
+
     name = models.CharField(max_length=100)
+
     title = models.CharField(max_length=200)
+
     bio = models.TextField()
 
     email = models.EmailField()
+
     phone = models.CharField(max_length=20)
 
+    location = models.CharField(
+        max_length=200,
+        blank=True
+    )
+
     linkedin = models.URLField()
+
     github = models.URLField()
 
     profile_image = models.ImageField(
@@ -24,8 +38,15 @@ class Profile(models.Model):
         return self.name
 
 
+# ==========================
+# EDUCATION
+# ==========================
+
 class Education(models.Model):
-    degree = models.CharField(max_length=100)
+
+    degree = models.CharField(
+        max_length=100
+    )
 
     institution = models.CharField(
         max_length=200
@@ -47,7 +68,12 @@ class Education(models.Model):
         return self.degree
 
 
+# ==========================
+# SKILLS
+# ==========================
+
 class Skill(models.Model):
+
     category = models.CharField(
         max_length=100
     )
@@ -60,7 +86,12 @@ class Skill(models.Model):
         return self.skill_name
 
 
+# ==========================
+# LANGUAGES
+# ==========================
+
 class Language(models.Model):
+
     language = models.CharField(
         max_length=100
     )
@@ -73,7 +104,12 @@ class Language(models.Model):
         return self.language
 
 
+# ==========================
+# EXPERIENCE
+# ==========================
+
 class Experience(models.Model):
+
     position = models.CharField(
         max_length=100
     )
@@ -92,7 +128,12 @@ class Experience(models.Model):
         return self.position
 
 
+# ==========================
+# PROJECTS
+# ==========================
+
 class Project(models.Model):
+
     title = models.CharField(
         max_length=200
     )
@@ -111,7 +152,12 @@ class Project(models.Model):
         return self.title
 
 
+# ==========================
+# TESTIMONIALS
+# ==========================
+
 class Testimonial(models.Model):
+
     name = models.CharField(
         max_length=100
     )
@@ -124,24 +170,51 @@ class Testimonial(models.Model):
 
     def __str__(self):
         return self.name
-
+    
+    
+    # ==========================
+# CONTACT
+# ==========================
 
 class Contact(models.Model):
-    name = models.CharField(
-        max_length=100
+
+    heading = models.CharField(
+        max_length=100,
+        default="Contact Me"
+    )
+
+    description = models.TextField()
+
+    location = models.CharField(
+        max_length=200
+    )
+
+    phone = models.CharField(
+        max_length=50
     )
 
     email = models.EmailField()
 
-    subject = models.CharField(
-        max_length=200
+    linkedin = models.URLField(
+        blank=True
     )
 
-    message = models.TextField()
+    github = models.URLField(
+        blank=True
+    )
 
-    created_at = models.DateTimeField(
-        auto_now_add=True
+    instagram = models.URLField(
+        blank=True
+    )
+
+    whatsapp = models.CharField(
+        max_length=30,
+        blank=True
+    )
+
+    available_for_work = models.BooleanField(
+        default=True
     )
 
     def __str__(self):
-        return self.name
+        return self.heading
