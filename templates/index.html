@@ -63,11 +63,13 @@
 
             <div class="hero-buttons">
 
-                <a href="{{ profile.resume.url }}" download>
-                    <button class="btn">
-                        Download CV
-                    </button>
-                </a>
+                {% if profile.resume %}
+<a href="{{ profile.resume.url }}" download>
+    <button class="btn">
+        Download CV
+    </button>
+</a>
+{% endif %}
 
                 <a href="#contact">
                     <button class="btn2">
