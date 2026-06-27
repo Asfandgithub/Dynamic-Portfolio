@@ -1,0 +1,522 @@
+/* ===========================
+   GENERAL STYLING
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-color:white;
+    color:#222;
+    transition:0.3s;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 60px;
+
+    background-color:white;
+
+    box-shadow:0px 2px 10px lightgray;
+
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#1E3A8A;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#2563EB;
+}
+
+#themeBtn{
+    background:none;
+    border:none;
+    font-size:20px;
+    cursor:pointer;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:80px;
+}
+
+.hero-content{
+    width:55%;
+}
+
+.hero-content h3{
+    color:#2563EB;
+}
+
+.hero-content h1{
+    font-size:55px;
+    color:#1E3A8A;
+
+    margin-top:10px;
+}
+
+.hero-content h2{
+    margin-top:20px;
+}
+
+.hero-content p{
+    margin-top:20px;
+
+    line-height:1.8;
+
+    text-align:justify;
+}
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+.hero-image{
+    width:40%;
+
+    display:flex;
+    justify-content:center;
+}
+
+.profile-card{
+    background:white;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    box-shadow:0px 2px 15px lightgray;
+}
+
+.profile-card img{
+    width:300px;
+    height:380px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    border:4px solid #1E3A8A;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+    background:#1E3A8A;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    margin-right:10px;
+}
+
+.btn:hover{
+    background:#2563EB;
+}
+
+.btn2{
+    background:white;
+
+    color:#1E3A8A;
+
+    border:2px solid #1E3A8A;
+
+    padding:12px 25px;
+
+    border-radius:5px;
+
+    cursor:pointer;
+}
+
+.btn2:hover{
+    background:#1E3A8A;
+    color:white;
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+section{
+    padding:80px;
+}
+
+.section-title{
+    text-align:center;
+
+    color:#1E3A8A;
+
+    font-size:35px;
+
+    margin-bottom:40px;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about-container{
+    background:#F8F8F8;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    box-shadow:0px 2px 10px lightgray;
+
+    line-height:1.8;
+}
+
+/* ===========================
+   EDUCATION
+=========================== */
+
+.education-container{
+    display:flex;
+    justify-content:space-around;
+
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+
+    background:white;
+
+    padding:25px;
+
+    margin:15px;
+
+    border-radius:10px;
+
+    box-shadow:0px 2px 10px lightgray;
+
+    text-align:center;
+}
+
+.card h3{
+    color:#1E3A8A;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skills-container{
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+}
+
+.skill-card{
+    width:250px;
+
+    background:white;
+
+    padding:25px;
+
+    margin:15px;
+
+    border-radius:10px;
+
+    box-shadow:0px 2px 10px lightgray;
+}
+
+.skill-card h3{
+    color:#1E3A8A;
+
+    margin-bottom:15px;
+}
+
+.skill-card p{
+    margin:10px 0;
+}
+
+/* ===========================
+   LANGUAGES
+=========================== */
+
+.language-container{
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+}
+
+/* ===========================
+   EXPERIENCE
+=========================== */
+
+.experience-card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    box-shadow:0px 2px 10px lightgray;
+}
+
+.experience-card h3{
+    color:#1E3A8A;
+}
+
+.experience-card ul{
+    margin-top:20px;
+
+    margin-left:20px;
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+
+.projects-container{
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+}
+
+.project-card{
+    width:320px;
+
+    background:white;
+
+    padding:25px;
+
+    margin:15px;
+
+    border-radius:10px;
+
+    box-shadow:0px 2px 10px lightgray;
+}
+
+.project-card h3{
+    color:#1E3A8A;
+
+    margin-bottom:15px;
+}
+
+/* ===========================
+   TESTIMONIALS
+=========================== */
+
+.testimonial-container{
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+}
+
+.testimonial{
+    width:400px;
+
+    background:white;
+
+    padding:25px;
+
+    margin:15px;
+
+    border-radius:10px;
+
+    box-shadow:0px 2px 10px lightgray;
+}
+
+.testimonial h4{
+    margin-top:15px;
+
+    color:#1E3A8A;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact-container{
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:30px;
+}
+
+#contactForm{
+    width:50%;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+#contactForm input,
+#contactForm textarea{
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:1px solid gray;
+
+    border-radius:5px;
+}
+
+.contact-info{
+    width:40%;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0px 2px 10px lightgray;
+}
+
+.contact-info p{
+    margin:20px 0;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#1E3A8A;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+}
+
+.footer-social{
+    margin-bottom:15px;
+}
+
+.footer-social a{
+    color:white;
+
+    text-decoration:none;
+
+    margin:0 15px;
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+.dark{
+    background:#111827;
+    color:white;
+}
+
+.dark .navbar,
+.dark .profile-card,
+.dark .card,
+.dark .skill-card,
+.dark .project-card,
+.dark .testimonial,
+.dark .experience-card,
+.dark .contact-info,
+.dark .about-container{
+    background:#1F2937;
+    color:white;
+}
+
+.dark .nav-links a{
+    color:white;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .hero{
+        flex-direction:column-reverse;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-image{
+        width:100%;
+    }
+
+    .contact-container{
+        flex-direction:column;
+    }
+
+    #contactForm,
+    .contact-info{
+        width:100%;
+    }
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        margin-top:20px;
+        flex-wrap:wrap;
+    }
+}
