@@ -83,8 +83,10 @@
 
             <div class="profile-card">
 
-                <img src="{{ profile.profile_image.url }}"
-                     alt="{{ profile.name }}">
+                {% if profile.profile_image %}
+<img src="{{ profile.profile_image.url }}"
+     alt="{{ profile.name }}">
+{% endif %}
 
             </div>
 
