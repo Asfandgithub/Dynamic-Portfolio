@@ -24,4 +24,4 @@ def home(request):
         'skills': skills,
     }
 
-    return render(request, 'home.html', context)
+    return render(request, 'index.html', context)
